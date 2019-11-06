@@ -49,7 +49,7 @@ export const IssueList = styled.ul`
 
   li{
     display:flex;
-    padding: 15px; 10px;
+    padding: 15px 10px;
     border: 1px solid #eee;
     border-radius: 4px;
   }
