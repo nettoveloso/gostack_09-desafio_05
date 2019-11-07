@@ -102,3 +102,42 @@ export const IssueList = styled.ul`
 
   }
 `;
+
+export const Form = styled.form`
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  label{
+    font-weight: bold;
+  }
+
+
+  select{
+    border: 1px solid ${props => (props.error ? 'red' : '#eee')};
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+`;
+
+export const PageActions = styled.div`
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  button {
+    transition: opacity 0.25s ease-out;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+    padding: 8px;
+    &:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+  }
+`;
